@@ -15,7 +15,7 @@ font-size: var(--font-size)通过var使用变量
 *::before,
 *::after {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {

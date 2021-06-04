@@ -1,17 +1,25 @@
 <template>
   <div id="app">
+    <keep-alive exclude="Details">
+      <router-view/>
+    </keep-alive>
+    <maintabbar class="bottombar"></maintabbar>
   </div>
 </template>
 
 <script>
-
+  import Maintabbar from 'components/content/maintabbar/Maintabbar.vue'
   export default {
     name: 'App',
     components: {
-      HelloWorld
+      Maintabbar
     }
   }
 </script>
 
-<style>
+<style scoped="">
+  @import "assets/css/base.css";
+  .bottombar{
+    /*z-index: 9;*/
+  }
 </style>
